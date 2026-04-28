@@ -7,3 +7,5 @@ Comprehensive React app for the EMI calculator with:
 - Key metrics (EMI, total interest, break-even month)
 - A small section for formulas and rules of thumb
 
+
+[LIVE HERE:PLAY](https://emi-amortization-explorer-and-teacher-ghzuprf9z.vercel.app/)
