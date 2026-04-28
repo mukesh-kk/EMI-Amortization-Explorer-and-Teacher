@@ -48,7 +48,7 @@ const App = () => {
         </div>
         <div>
           <label><strong>Duration (Years): {years}</strong></label>
-          <input type="range" min="1" max="30" value={years} onChange={(e) => setYears(Number(e.target.value))} style={{ width: '100%', marginTop: '5px' }} />
+          <input type="range" min="1" max="40" value={years} onChange={(e) => setYears(Number(e.target.value))} style={{ width: '100%', marginTop: '5px' }} />
         </div>
         <div>
           <label><strong>Expected Return (%): {annualReturn}</strong></label>

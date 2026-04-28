@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink, Navigate } from "react-router-dom"; // Added Navigate
 import EMI from "./EMI";
 import RealReturns from "./RealReturns";
 import Init from './InitailCapitalMatters';
@@ -32,7 +32,6 @@ const styles = {
 };
 
 export default function App() {
-  // Helper to handle active styling
   const getLinkStyle = ({ isActive }) => ({
     ...styles.link,
     ...(isActive ? styles.activeLink : {}),
@@ -49,6 +48,9 @@ export default function App() {
 
       <main style={styles.main}>
         <Routes>
+          {/* This redirect handles the auto-selection */}
+          <Route path="/" element={<Navigate to="/emi" replace />} />
+          
           <Route path="/emi" element={<EMI />} />
           <Route path="/real-returns" element={<RealReturns />} />
           <Route path="/init" element={<Init />} />
