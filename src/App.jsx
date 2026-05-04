@@ -3,6 +3,7 @@ import EMI from "./EMI";
 import RealReturns from "./RealReturns";
 import Init from './InitailCapitalMatters';
 import DebtCost from './DebtCost';
+import SIPCalculator from './SIP.'
 
 // -- Styles --
 const styles = {
@@ -44,6 +45,8 @@ export default function App() {
         <NavLink to="/real-returns" style={getLinkStyle}>Real Returns: Fischer Law</NavLink>
         <NavLink to="/init" style={getLinkStyle}>Initial Capital Matters</NavLink>
         <NavLink to="/debt-cost" style={getLinkStyle}>Debt Cost</NavLink>
+        <NavLink to="/sip"style={getLinkStyle}>SIP</NavLink>
+        
       </nav>
 
       <main style={styles.main}>
@@ -55,6 +58,7 @@ export default function App() {
           <Route path="/real-returns" element={<RealReturns />} />
           <Route path="/init" element={<Init />} />
           <Route path="/debt-cost" element={<DebtCost />} />
+          <Route path ="/sip" element={<SIPCalculator/>}/>
         </Routes>
       </main>
     </BrowserRouter>
